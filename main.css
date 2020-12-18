@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #263238;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+}
+
+span{
+    position: relative;
+}
+
+span::before{
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    height: .8em;
+    width: .1em;
+    background-color: white;
+    animation: carot 1s  infinite;
+}
+
+@keyframes carot{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
