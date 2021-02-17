@@ -34,7 +34,7 @@ span::before{
     animation: carot 1s  infinite;
 }
 
-@keyframes carot{
+@keyframes caret{
     0%{
         opacity: 1;
     }
